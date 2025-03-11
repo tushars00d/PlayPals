@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.example.playpals"
-    compileSdk = 35  // ✅ Updated to fix dependency errors
+    compileSdk = 35  // ✅ Updated to match latest dependencies
 
     defaultConfig {
         applicationId = "com.example.playpals"
         minSdk = 24
-        targetSdk = 35  // ✅ Updated to match compileSdk
+        targetSdk = 35  // ✅ Matches compileSdk to avoid compatibility issues
         versionCode = 1
         versionName = "1.0"
 
@@ -28,17 +28,17 @@ android {
         }
     }
 
-    // ✅ Enable View Binding (Fixes `binding` red error)
+    // ✅ Enable View Binding
     buildFeatures {
         viewBinding = true
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17  // ✅ Updated to latest recommended version
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"  // ✅ Updated for Kotlin 2.1.0 compatibility
     }
 }
 
@@ -58,8 +58,8 @@ dependencies {
     implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.googleid)
 
-    // ✅ View Binding Fix
-    implementation("androidx.databinding:viewbinding:8.0.2")
+    // ✅ Ensure View Binding Works
+    implementation("androidx.databinding:viewbinding:8.1.0")  // Latest version
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

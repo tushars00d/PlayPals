@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "756932824842",
+    "project_id": "playpals-45016",
+    "storage_bucket": "playpals-45016.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756932824842:android:f62dd8cd6ecad3be8534f3",
+        "android_client_info": {
+          "package_name": "com.example.playpals"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKqZeNI5VcL3j3PtRP3WXOATuQEig2yf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

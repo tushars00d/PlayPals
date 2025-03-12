@@ -59,7 +59,8 @@ dependencies {
     implementation(libs.googleid)
 
     // ✅ Ensure View Binding Works
-    implementation("androidx.databinding:viewbinding:8.1.0")  // Latest version
+    implementation("androidx.databinding:viewbinding:8.1.0")
+    implementation(libs.play.services.location)  // Latest version
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
